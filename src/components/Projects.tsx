@@ -35,8 +35,15 @@ export default function Projects() {
                 FEATURED
               </span>
             )}
+            <p className="mb-2 font-mono-custom text-[11px] tracking-wide text-violet-300">
+              {proj.category}
+            </p>
             <h3 className="pr-20 text-lg font-semibold text-slate-100">{proj.title}</h3>
             <p className="mt-3 text-sm leading-relaxed text-slate-400">{proj.description}</p>
+
+            <p className="mt-4 overflow-x-auto whitespace-nowrap rounded-lg border border-slate-700/50 bg-slate-900/50 px-3 py-2 font-mono-custom text-[11px] text-slate-400">
+              {proj.pipeline}
+            </p>
 
             <div className="mt-4 flex flex-wrap gap-2">
               {proj.tags.map((t) => (

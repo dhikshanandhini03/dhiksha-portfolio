@@ -150,59 +150,52 @@ export type Project = {
   githubUrl: string;
   demoUrl?: string;
   featured?: boolean;
+  category: string;
+  pipeline: string;
 };
 
 export const projects: Project[] = [
   {
-    title: "Real-Time Clickstream Pipeline",
+    title: "STB Telemetry & FTI Experience Analytics Platform",
     description:
-      "End-to-end streaming pipeline ingesting user clickstream events via Kafka, processed with Flink for sessionization, and served through a low-latency analytics API.",
-    tags: ["Kafka", "Flink", "Spark Structured Streaming", "Docker"],
-    metrics: ["200M+ events/day", "<800ms end-to-end latency"],
-    githubUrl: "https://github.com/your-username/realtime-clickstream-pipeline",
-    demoUrl: "#",
+      "Near-real-time analytics platform for set-top-box fleets that ingests first-time-install (FTI) telemetry — pairing, network setup, firmware — to answer which install step is failing and for which firmware, as it happens.",
+    category: "Streaming / near-real-time analytics",
+    pipeline: "STB → Azure Event Hubs → Bronze → PySpark → Silver → Gold → Fabric Lakehouse/Warehouse → Power BI",
+    tags: ["Azure Event Hubs", "PySpark", "Medallion Architecture", "Microsoft Fabric", "Power BI"],
+    metrics: ["Sessionized FTI event streams", "Failure attribution by firmware version", "Bronze → Silver → Gold quality gates"],
+    githubUrl: "https://github.com/dhikshanandhini03/stb-fti-analytics-platform",
     featured: true,
   },
   {
-    title: "Cloud Lakehouse Migration",
+    title: "Network Management Reporting & Capacity Planning",
     description:
-      "Migrated a monolithic on-prem warehouse to a Snowflake + dbt lakehouse with fully version-controlled transformations and automated CI testing.",
-    tags: ["Snowflake", "dbt", "Airflow", "GitHub Actions"],
-    metrics: ["38% cost reduction", "120+ dbt models"],
-    githubUrl: "https://github.com/your-username/cloud-lakehouse-migration",
+      "Enterprise batch/event-driven platform that extracts network-performance data from a data warehouse and routes it through a message queue to identify overloaded regions and forecast future capacity needs.",
+    category: "Batch / event-driven enterprise platform",
+    pipeline: "Network Data Warehouse → SQL Extraction → Batch Processing → JSON → RabbitMQ → Processing/Analysis → Capacity Reporting",
+    tags: ["SQL", "JDBC", "Java/Spring", "RabbitMQ", "Batch Extraction"],
+    metrics: ["Region-level utilization tracking (e.g. 92% at Erode)", "Decoupled ingestion via RabbitMQ buffer", "Hourly/daily capacity extraction jobs"],
+    githubUrl: "https://github.com/dhikshanandhini03/network-capacity-planning",
+  },
+  {
+    title: "STB Fleet Health & Reliability Platform",
+    description:
+      "24x7 monitoring system for a fleet of set-top boxes, streaming CPU, memory, WiFi signal, firmware, and app-crash telemetry to detect regressions (e.g. crash-rate spikes after a firmware rollout) in near real time.",
+    category: "Real-time streaming + batch",
+    pipeline: "STB Fleet → FastAPI → Kafka → Spark Streaming → PostgreSQL (valid/rejected) → Metabase + nightly Airflow reports",
+    tags: ["Kafka", "Spark Streaming", "FastAPI", "PostgreSQL", "Metabase", "Airflow", "Docker"],
+    metrics: ["Fleet-scale telemetry ingestion", "Firmware-linked crash-rate detection", "Dead-letter handling for rejected data"],
+    githubUrl: "https://github.com/dhikshanandhini03/stb-fleet-health-platform",
     featured: true,
   },
   {
-    title: "Automated Data Quality Framework",
+    title: "Telecom Churn & Network Health Pipeline",
     description:
-      "A metadata-driven data quality and observability framework built on Great Expectations, integrated into Airflow with Slack alerting on anomalies.",
-    tags: ["Great Expectations", "Airflow", "Python", "Slack API"],
-    metrics: ["60% fewer data incidents", "12 teams onboarded"],
-    githubUrl: "https://github.com/your-username/data-quality-framework",
-  },
-  {
-    title: "Serverless ETL on AWS",
-    description:
-      "Event-driven, fully serverless ETL pipeline using Lambda, Glue, and Step Functions for ingesting partner data feeds into a Redshift warehouse.",
-    tags: ["AWS Lambda", "Glue", "Step Functions", "Redshift"],
-    metrics: ["Zero idle infra cost", "99.95% uptime"],
-    githubUrl: "https://github.com/your-username/serverless-etl-aws",
-  },
-  {
-    title: "ML Feature Store",
-    description:
-      "Centralized feature store built with Feast, backed by Redis for online serving and BigQuery for offline training, powering 5+ ML models in production.",
-    tags: ["Feast", "Redis", "BigQuery", "Python"],
-    metrics: ["5 models in production", "40ms p99 feature fetch"],
-    githubUrl: "https://github.com/your-username/ml-feature-store",
-  },
-  {
-    title: "Open-Source dbt Utils Contribution",
-    description:
-      "Contributed reusable macros and testing patterns to an open-source dbt package used by hundreds of data teams.",
-    tags: ["dbt", "SQL", "Open Source"],
-    metrics: ["500+ GitHub stars", "3 merged PRs"],
-    githubUrl: "https://github.com/your-username/dbt-utils-contrib",
+      "Integrates CRM, billing, and STB telemetry to score customer churn risk (late payments, buffering, weak signal, complaints) and correlates it with regional network quality — turning telemetry into retention and network-ops actions.",
+    category: "Hybrid batch + streaming",
+    pipeline: "CRM + Billing + STB Telemetry → Data Integration → Churn Analysis / Network Analysis → Churn Report + Network Hotspots",
+    tags: ["Python", "SQL", "Batch + Streaming Ingestion", "Data Integration", "Churn Analysis"],
+    metrics: ["Multi-source customer risk scoring", "Region-level network health scoring", "Connects telemetry to business outcomes"],
+    githubUrl: "https://github.com/dhikshanandhini03/telecom-churn-network-health",
   },
 ];
 
