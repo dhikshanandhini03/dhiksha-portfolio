@@ -35,7 +35,7 @@ export default function Navbar() {
           duration={500}
           className="cursor-pointer font-mono-custom text-lg font-bold tracking-tight text-slate-100"
         >
-          <span className="text-gradient">&lt;/&gt;</span> Arjun.dev
+          <span className="text-gradient">&lt;/&gt;</span> Dhiksha.dev
         </Link>
 
         <ul className="hidden items-center gap-8 md:flex">
