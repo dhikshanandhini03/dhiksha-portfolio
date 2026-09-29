@@ -1,7 +1,7 @@
 // Dummy placeholder content — replace with real details later.
 
 export const profile = {
-  name: "Arjun Mehta",
+  name: "Dhiksha Nandhini S",
   role: "Data Engineer",
   rotatingRoles: [
     "Data Pipelines",
@@ -12,14 +12,14 @@ export const profile = {
   tagline:
     "I design and build resilient, large-scale data pipelines that turn raw chaos into reliable, real-time insight.",
   location: "Bengaluru, India",
-  email: "arjun.mehta.dev@example.com",
+  email: "dhiksha.nandhini.dev@example.com",
   resumeUrl: "#",
-  avatarInitials: "AM",
+  avatarInitials: "DN",
   socials: {
-    github: "https://github.com/your-username",
+    github: "https://github.com/dhikshanandhini03",
     linkedin: "https://linkedin.com/in/your-username",
     twitter: "https://twitter.com/your-username",
-    email: "mailto:arjun.mehta.dev@example.com",
+    email: "mailto:dhiksha.nandhini.dev@example.com",
   },
 };
 
