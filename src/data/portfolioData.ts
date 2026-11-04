@@ -206,7 +206,7 @@ export const projects: Project[] = [
       "Event-time + late-event + replay-safe processing",
       "Secure, low-latency REST APIs",
     ],
-    githubUrl: "https://github.com/dhikshanandhini03",
+    githubUrl: "https://github.com/dhikshanandhini03/Scree-Time-Analytics-STB",
     featured: true,
   },
   {
@@ -221,7 +221,7 @@ export const projects: Project[] = [
       "Deduplicated, event-time-accurate telemetry",
       "Doris-backed operational dashboards",
     ],
-    githubUrl: "https://github.com/dhikshanandhini03",
+    githubUrl: "https://github.com/dhikshanandhini03/stb-telemetry-analytics",
     featured: true,
   },
   {
@@ -236,7 +236,7 @@ export const projects: Project[] = [
       "Quarantine handling for problematic records",
       "Health checks, metrics, structured logs & alerts",
     ],
-    githubUrl: "https://github.com/dhikshanandhini03",
+    githubUrl: "https://github.com/dhikshanandhini03/Payment-Reconciliation-Data-Platform",
   },
   {
     title: "Subscription Data Warehouse and Analytics Platform",
@@ -250,7 +250,7 @@ export const projects: Project[] = [
       "Automated data quality checks",
       "Fact, dimension & reporting mart models",
     ],
-    githubUrl: "https://github.com/dhikshanandhini03",
+    githubUrl: "https://github.com/dhikshanandhini03/subscription-data-platform",
   },
   {
     title: "Automated Monthly Broadband Usage Statements",
@@ -264,7 +264,7 @@ export const projects: Project[] = [
       "Idempotent ingestion & conflict handling",
       "Calendar-based monthly usage statements",
     ],
-    githubUrl: "https://github.com/dhikshanandhini03",
+    githubUrl: "https://github.com/dhikshanandhini03/Broadband-Usage-Statements",
   },
 ];
 
