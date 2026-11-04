@@ -1,48 +1,46 @@
-// Dummy placeholder content — replace with real details later.
-
 export const profile = {
   name: "Dhiksha Nandhini S",
-  role: "Data Engineer",
+  role: "Software Engineer – Data Engineering | Real-Time Streaming | Data Warehousing",
   rotatingRoles: [
-    "Data Pipelines",
-    "Streaming Systems",
-    "Cloud Data Warehouses",
-    "Big Data Platforms",
+    "Real-Time Data Pipelines",
+    "Event-Driven Streaming",
+    "Data Warehousing",
+    "Medallion Architectures",
   ],
   tagline:
-    "I design and build resilient, large-scale data pipelines that turn raw chaos into reliable, real-time insight.",
-  location: "Bengaluru, India",
-  email: "dhiksha.nandhini.dev@example.com",
+    "Data-focused Software Engineer with 3+ years of experience building real-time and batch data pipelines that process up to 10M+ telemetry events per day — from event-driven ingestion to Bronze/Silver/Gold warehouses and star-schema analytics.",
+  location: "Erode, India",
+  phone: "+91 6383362799",
+  email: "dhikshanandhiniselvakumar@gmail.com",
   resumeUrl: "#",
   avatarInitials: "DN",
   socials: {
     github: "https://github.com/dhikshanandhini03",
-    linkedin: "https://linkedin.com/in/your-username",
-    twitter: "https://twitter.com/your-username",
-    email: "mailto:dhiksha.nandhini.dev@example.com",
+    linkedin: "https://www.linkedin.com/in/dhikshanandhini/",
+    email: "mailto:dhikshanandhiniselvakumar@gmail.com",
   },
 };
 
 export const stats = [
-  { label: "Years of Experience", value: "5+" },
-  { label: "Pipelines Shipped", value: "40+" },
-  { label: "Data Processed / Day", value: "3.2 TB" },
-  { label: "Pipeline Uptime", value: "99.95%" },
+  { label: "Years of Experience", value: "3+" },
+  { label: "Telemetry Events / Day", value: "10M+" },
+  { label: "Data Load Performance Gain", value: "~40%" },
+  { label: "Connected Devices Managed", value: "10K+" },
 ];
 
 export const about = {
   paragraphs: [
-    "I'm a data engineer who loves turning messy, high-volume data into dependable products that teams can actually trust. My focus areas are batch & streaming ETL/ELT, distributed compute, and cloud-native data platforms.",
-    "Over the past 5+ years I've built ingestion frameworks, orchestrated workflows across petabyte-scale lakes, and partnered with analytics & ML teams to ship data they can build on with confidence.",
-    "When I'm not moving data around, I'm usually contributing to open-source data tooling, mentoring junior engineers, or writing about pipeline architecture patterns.",
+    "I'm a data-focused Software Engineer with 3+ years of combined experience building real-time and batch data pipelines that process up to 10M+ telemetry events per day. I work hands-on with Python, SQL, Apache Kafka, Apache Flink, Databricks/PySpark, Apache Airflow, dbt, Snowflake, PostgreSQL, and FastAPI across Azure and AWS.",
+    "I build event-driven ingestion with event-time handling, late-event processing, idempotent writes, and replay-safe recovery, plus Bronze/Silver/Gold layers and star-schema warehouses for analytics and reporting.",
+    "Beyond my core data engineering work, I partner cross-functionally — from building \"Safe Aura\" for Android TV with product and mobile teams, to prototyping an on-device real-time subtitle-translation experience using ML (Optimium).",
   ],
   highlights: [
-    "Distributed Systems",
-    "Streaming Architecture",
-    "Data Modeling",
-    "Cloud Cost Optimization",
+    "Real-Time Streaming",
+    "Event-Driven Architecture",
+    "Medallion Architecture",
+    "Star Schema Modeling",
     "Data Quality & Observability",
-    "Mentorship",
+    "Kafka & Flink",
   ],
 };
 
@@ -56,42 +54,81 @@ export const skillCategories: SkillCategory[] = [
   {
     title: "Languages",
     icon: "code",
-    skills: ["Python", "SQL", "Scala", "Bash", "Java"],
+    skills: ["Python", "SQL", "Java"],
   },
   {
-    title: "Big Data & Streaming",
+    title: "Streaming & Messaging",
     icon: "stream",
-    skills: ["Apache Spark", "Hadoop", "Apache Kafka", "Apache Flink", "Apache Beam"],
+    skills: [
+      "Apache Kafka",
+      "Apache Flink",
+      "Azure Event Hubs",
+      "Event-Driven Architecture",
+      "Event-Time Processing",
+      "Late-Event Handling",
+      "At-Least-Once Delivery",
+      "Idempotent Writes",
+      "Replay-Safe Recovery",
+    ],
   },
   {
-    title: "Orchestration",
+    title: "Data Processing & Orchestration",
     icon: "workflow",
-    skills: ["Airflow", "Dagster", "Prefect", "Step Functions"],
+    skills: [
+      "Databricks",
+      "PySpark",
+      "Apache Airflow",
+      "dbt",
+      "ETL/ELT Pipelines",
+      "Batch & Incremental Processing",
+      "Time-Window Aggregation",
+    ],
   },
   {
-    title: "Cloud Platforms",
-    icon: "cloud",
-    skills: ["AWS (S3, Glue, EMR, Redshift)", "GCP (BigQuery, Dataflow)", "Azure Data Factory"],
-  },
-  {
-    title: "Warehousing & Modeling",
+    title: "Data Architecture & Modeling",
     icon: "warehouse",
-    skills: ["Snowflake", "dbt", "Kimball Modeling", "Data Vault 2.0"],
+    skills: [
+      "Medallion Architecture (Bronze/Silver/Gold)",
+      "Star Schema",
+      "Fact & Dimension Models",
+      "Reporting Marts",
+      "Relational Data Modeling",
+      "Schema Validation",
+      "Deduplication",
+      "Data Quality",
+    ],
   },
   {
-    title: "Databases",
+    title: "Databases & Warehouses",
     icon: "database",
-    skills: ["PostgreSQL", "MongoDB", "Cassandra", "Redis"],
+    skills: ["PostgreSQL", "Snowflake", "Apache Doris", "Azure Cosmos DB", "MinIO", "AWS S3"],
   },
   {
-    title: "DevOps & IaC",
+    title: "Cloud & DevOps",
+    icon: "cloud",
+    skills: [
+      "Microsoft Azure (Event Hubs, Cosmos DB, API Management)",
+      "AWS (S3)",
+      "Git/GitHub",
+      "CI/CD",
+    ],
+  },
+  {
+    title: "Backend & APIs",
     icon: "devops",
-    skills: ["Docker", "Kubernetes", "Terraform", "GitHub Actions"],
+    skills: ["FastAPI", "REST API Design", "JWT Authentication", "Per-Device Authorization"],
   },
   {
-    title: "Visualization",
+    title: "Observability",
     icon: "chart",
-    skills: ["Tableau", "Power BI", "Looker", "Metabase"],
+    skills: [
+      "Kafka Consumer Lag Monitoring",
+      "Flink Job Health",
+      "Health Checks",
+      "Metrics",
+      "Structured Logging",
+      "Alerting",
+    ],
   },
 ];
 
@@ -106,39 +143,41 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
-    role: "Senior Data Engineer",
-    company: "NimbusData Inc.",
-    period: "2023 — Present",
-    location: "Remote",
+    role: "Software Engineer",
+    company: "Vantiva",
+    period: "Jun 2024 — Present",
+    location: "Bangalore, India",
     points: [
-      "Led migration of a legacy batch warehouse to a Snowflake + dbt lakehouse, cutting query costs by 38%.",
-      "Designed a Kafka-based CDC pipeline streaming 200M+ events/day with sub-second latency.",
-      "Built a self-serve data quality framework used by 12+ teams, reducing production incidents by 60%.",
+      "Designed and delivered real-time and batch data pipelines using Python, SQL, Apache Kafka, Apache Flink, Databricks/PySpark, and Azure Event Hubs, handling 10M+ telemetry events per day.",
+      "Orchestrated ETL/ELT workflows with Apache Airflow and dbt into Snowflake, improving data load performance by ~40% through benchmarking and pipeline tuning.",
+      "Engineered fault-tolerant ingestion with event-time handling, idempotent writes, deduplication, and replay-safe recovery, plus Bronze/Silver/Gold layers and star-schema models for analytics.",
+      "Monitored Kafka consumer lag and Flink job health, troubleshooting ingestion delays and adding health checks, metrics, structured logs, and alerts.",
+      "Built secure FastAPI REST services (JWT, Azure API Management) and partnered with product, mobile, and analytics teams to deliver reliable, analytics-ready datasets.",
     ],
-    stack: ["Snowflake", "dbt", "Kafka", "Airflow", "AWS"],
+    stack: ["Python", "Kafka", "Flink", "Databricks/PySpark", "Airflow", "dbt", "Snowflake", "FastAPI"],
   },
   {
-    role: "Data Engineer",
-    company: "Quantix Analytics",
-    period: "2021 — 2023",
-    location: "Bengaluru, India",
+    role: "SDE Intern",
+    company: "Vantiva",
+    period: "Jan 2024 — May 2024",
+    location: "Bangalore, India",
     points: [
-      "Built and maintained 25+ Airflow DAGs orchestrating ingestion from 15+ source systems.",
-      "Re-architected Spark ETL jobs, reducing nightly batch runtime from 6 hours to 90 minutes.",
-      "Implemented a metadata-driven ingestion framework, cutting new-source onboarding time by 70%.",
+      "Contributed to device-event correlation workflows for home-network platforms, processing cloud-connected device telemetry into a PostgreSQL-backed device inventory.",
+      "Assisted in building automated test cases and CI integrations for nightly soak and sanity runs.",
     ],
-    stack: ["Apache Spark", "Airflow", "PostgreSQL", "GCP BigQuery"],
+    stack: ["Python", "PostgreSQL", "CI/CD"],
   },
   {
-    role: "Data Engineering Intern",
-    company: "Streamly Labs",
-    period: "2020 — 2021",
-    location: "Bengaluru, India",
+    role: "SDE Intern",
+    company: "CommScope",
+    period: "May 2023 — Dec 2023",
+    location: "Bangalore, India",
     points: [
-      "Built dashboards and automated reporting pipelines using Python and Power BI.",
-      "Wrote unit and data-validation tests improving pipeline reliability across 3 core datasets.",
+      "Performed sanity and functional testing on software builds, validating features against requirements and reporting defects with clear reproduction steps.",
+      "Wrote SQL queries to validate test data and backend records during release verification.",
+      "Collaborated with Android development teams to reproduce, triage, and verify fixes for reported issues.",
     ],
-    stack: ["Python", "Power BI", "MySQL"],
+    stack: ["SQL", "Android", "Functional Testing"],
   },
 ];
 
@@ -156,46 +195,76 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "STB Telemetry & FTI Experience Analytics Platform",
+    title: "Screen Time Analytics Platform — Android TV",
     description:
-      "Near-real-time analytics platform for set-top-box fleets that ingests first-time-install (FTI) telemetry — pairing, network setup, firmware — to answer which install step is failing and for which firmware, as it happens.",
+      "End-to-end real-time data engineering pipeline for Bell Android TV's Screen Time feature, processing 10M+ telemetry events per day with fault-tolerant stream processing to ensure accurate screen-time calculations without double-counting.",
+    category: "Real-time streaming analytics",
+    pipeline: "Azure Event Hubs → Databricks/PySpark → Cosmos DB → FastAPI",
+    tags: ["Azure Event Hubs", "Databricks", "PySpark", "Cosmos DB", "FastAPI", "JWT"],
+    metrics: [
+      "10M+ telemetry events / day",
+      "Event-time + late-event + replay-safe processing",
+      "Secure, low-latency REST APIs",
+    ],
+    githubUrl: "https://github.com/dhikshanandhini03",
+    featured: true,
+  },
+  {
+    title: "STB Telemetry Streaming & Analytics Platform",
+    description:
+      "Kafka–Flink streaming pipelines for set-top-box telemetry supporting event validation, deduplication, and event-time processing, with downstream data flow into Apache Doris for dashboards.",
     category: "Streaming / near-real-time analytics",
-    pipeline: "STB → Azure Event Hubs → Bronze → PySpark → Silver → Gold → Fabric Lakehouse/Warehouse → Power BI",
-    tags: ["Azure Event Hubs", "PySpark", "Medallion Architecture", "Microsoft Fabric", "Power BI"],
-    metrics: ["Sessionized FTI event streams", "Failure attribution by firmware version", "Bronze → Silver → Gold quality gates"],
-    githubUrl: "https://github.com/dhikshanandhini03/stb-fti-analytics-platform",
+    pipeline: "Kafka → Flink → MinIO → Apache Doris → FastAPI/Airflow → Dashboards",
+    tags: ["Apache Kafka", "Apache Flink", "MinIO", "Apache Doris", "FastAPI", "Airflow"],
+    metrics: [
+      "Kafka consumer lag & Flink job health monitoring",
+      "Deduplicated, event-time-accurate telemetry",
+      "Doris-backed operational dashboards",
+    ],
+    githubUrl: "https://github.com/dhikshanandhini03",
     featured: true,
   },
   {
-    title: "Network Management Reporting & Capacity Planning",
+    title: "Payment Reconciliation Data Platform",
     description:
-      "Enterprise batch/event-driven platform that extracts network-performance data from a data warehouse and routes it through a message queue to identify overloaded regions and forecast future capacity needs.",
-    category: "Batch / event-driven enterprise platform",
-    pipeline: "Network Data Warehouse → SQL Extraction → Batch Processing → JSON → RabbitMQ → Processing/Analysis → Capacity Reporting",
-    tags: ["SQL", "JDBC", "Java/Spring", "RabbitMQ", "Batch Extraction"],
-    metrics: ["Region-level utilization tracking (e.g. 92% at Erode)", "Decoupled ingestion via RabbitMQ buffer", "Hourly/daily capacity extraction jobs"],
-    githubUrl: "https://github.com/dhikshanandhini03/network-capacity-planning",
+      "Event-driven data pipeline to ingest payment events and reconcile records across application systems, with fault-tolerant Kafka ingestion and analytical data models for reporting.",
+    category: "Event-driven reconciliation platform",
+    pipeline: "Source Systems → Kafka (at-least-once) → Bronze/Silver/Gold → Star Schema Reporting",
+    tags: ["Apache Kafka", "Bronze/Silver/Gold", "Data Quality", "Star Schema"],
+    metrics: [
+      "At-least-once delivery with idempotent writes",
+      "Quarantine handling for problematic records",
+      "Health checks, metrics, structured logs & alerts",
+    ],
+    githubUrl: "https://github.com/dhikshanandhini03",
   },
   {
-    title: "STB Fleet Health & Reliability Platform",
+    title: "Subscription Data Warehouse and Analytics Platform",
     description:
-      "24x7 monitoring system for a fleet of set-top boxes, streaming CPU, memory, WiFi signal, firmware, and app-crash telemetry to detect regressions (e.g. crash-rate spikes after a firmware rollout) in near real time.",
-    category: "Real-time streaming + batch",
-    pipeline: "STB Fleet → FastAPI → Kafka → Spark Streaming → PostgreSQL (valid/rejected) → Metabase + nightly Airflow reports",
-    tags: ["Kafka", "Spark Streaming", "FastAPI", "PostgreSQL", "Metabase", "Airflow", "Docker"],
-    metrics: ["Fleet-scale telemetry ingestion", "Firmware-linked crash-rate detection", "Dead-letter handling for rejected data"],
-    githubUrl: "https://github.com/dhikshanandhini03/stb-fleet-health-platform",
-    featured: true,
+      "Automated AWS S3-to-Snowflake ingestion pipeline orchestrated through Apache Airflow, with dbt transformation workflows building a star-schema warehouse of fact, dimension, and reporting marts.",
+    category: "Batch ELT / data warehousing",
+    pipeline: "AWS S3 → Airflow → Snowflake → dbt → Star Schema Marts",
+    tags: ["AWS S3", "Apache Airflow", "Snowflake", "dbt", "Star Schema"],
+    metrics: [
+      "~40% improvement in load performance",
+      "Automated data quality checks",
+      "Fact, dimension & reporting mart models",
+    ],
+    githubUrl: "https://github.com/dhikshanandhini03",
   },
   {
-    title: "Telecom Churn & Network Health Pipeline",
+    title: "Automated Monthly Broadband Usage Statements",
     description:
-      "Integrates CRM, billing, and STB telemetry to score customer churn risk (late payments, buffering, weak signal, complaints) and correlates it with regional network quality — turning telemetry into retention and network-ops actions.",
-    category: "Hybrid batch + streaming",
-    pipeline: "CRM + Billing + STB Telemetry → Data Integration → Churn Analysis / Network Analysis → Churn Report + Network Hotspots",
-    tags: ["Python", "SQL", "Batch + Streaming Ingestion", "Data Integration", "Churn Analysis"],
-    metrics: ["Multi-source customer risk scoring", "Region-level network health scoring", "Connects telemetry to business outcomes"],
-    githubUrl: "https://github.com/dhikshanandhini03/telecom-churn-network-health",
+      "End-to-end ETL pipeline supporting ~10,000 connected home gateways at up to 4M+ device usage events per day, with event-driven ingestion from Azure Event Hubs into a structured PostgreSQL data model.",
+    category: "Event-driven ETL / batch reporting",
+    pipeline: "Azure Event Hubs → Deserialization/Validation → PostgreSQL → Monthly Batch Aggregation",
+    tags: ["Azure Event Hubs", "PostgreSQL", "ETL", "Batch Processing"],
+    metrics: [
+      "~10,000 gateways, 4M+ events/day",
+      "Idempotent ingestion & conflict handling",
+      "Calendar-based monthly usage statements",
+    ],
+    githubUrl: "https://github.com/dhikshanandhini03",
   },
 ];
 
@@ -206,14 +275,14 @@ export type Certification = {
 };
 
 export const certifications: Certification[] = [
-  { name: "AWS Certified Data Analytics – Specialty", issuer: "Amazon Web Services", year: "2024" },
-  { name: "Professional Data Engineer", issuer: "Google Cloud", year: "2023" },
-  { name: "SnowPro Core Certification", issuer: "Snowflake", year: "2023" },
-  { name: "Databricks Certified Data Engineer Associate", issuer: "Databricks", year: "2022" },
+  { name: "AWS Cloud Solutions Architect", issuer: "Coursera", year: "Certification" },
+  { name: "Google Data Analytics Certificate", issuer: "Coursera", year: "Certification" },
+  { name: "Vantiva Q3 Triumph Award", issuer: "Vantiva", year: "2026" },
+  { name: "Best Project, Idea Blitz — \"Safe Aura\"", issuer: "Idea Blitz", year: "2025" },
 ];
 
 export const education = {
-  degree: "B.Tech in Computer Science",
-  school: "Indian Institute of Information Technology",
-  period: "2016 — 2020",
+  degree: "B.E., Computer Science & Engineering",
+  school: "Kongu Engineering College, Erode · CGPA: 9.3",
+  period: "2020 — 2024",
 };

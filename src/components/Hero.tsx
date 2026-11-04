@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
-import { FiGithub, FiLinkedin, FiTwitter, FiMail, FiArrowDown } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMail, FiArrowDown } from "react-icons/fi";
 import { profile } from "../data/portfolioData";
 
 function useTypewriter(words: string[], speed = 80, pause = 1400) {
@@ -89,9 +89,6 @@ export default function Hero() {
             </a>
             <a href={profile.socials.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="transition-colors hover:text-cyan-300">
               <FiLinkedin size={20} />
-            </a>
-            <a href={profile.socials.twitter} target="_blank" rel="noreferrer" aria-label="Twitter" className="transition-colors hover:text-cyan-300">
-              <FiTwitter size={20} />
             </a>
             <a href={profile.socials.email} aria-label="Email" className="transition-colors hover:text-cyan-300">
               <FiMail size={20} />

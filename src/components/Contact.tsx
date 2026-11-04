@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FiGithub, FiLinkedin, FiTwitter, FiMail, FiSend } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMail, FiSend, FiPhone, FiMapPin } from "react-icons/fi";
 import { profile } from "../data/portfolioData";
 
 export default function Contact() {
@@ -21,6 +21,15 @@ export default function Contact() {
           Reach out and let's talk data.
         </p>
 
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-5 text-sm text-slate-400">
+          <span className="flex items-center gap-1.5">
+            <FiMapPin size={14} /> {profile.location}
+          </span>
+          <span className="flex items-center gap-1.5">
+            <FiPhone size={14} /> {profile.phone}
+          </span>
+        </div>
+
         <a
           href={profile.socials.email}
           className="mt-8 inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-cyan-400 to-emerald-400 px-7 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/20 transition-transform hover:scale-105"
@@ -34,9 +43,6 @@ export default function Contact() {
           </a>
           <a href={profile.socials.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="transition-colors hover:text-cyan-300">
             <FiLinkedin size={20} />
-          </a>
-          <a href={profile.socials.twitter} target="_blank" rel="noreferrer" aria-label="Twitter" className="transition-colors hover:text-cyan-300">
-            <FiTwitter size={20} />
           </a>
           <a href={profile.socials.email} aria-label="Email" className="transition-colors hover:text-cyan-300">
             <FiMail size={20} />
