@@ -77,6 +77,7 @@ export default function Hero() {
             </Link>
             <a
               href={profile.resumeUrl}
+              download="Dhiksha_Nandhini_S.pdf"
               className="rounded-lg border border-slate-600 px-6 py-3 text-sm font-semibold text-slate-200 transition-colors hover:border-cyan-400 hover:text-cyan-300"
             >
               Download Résumé

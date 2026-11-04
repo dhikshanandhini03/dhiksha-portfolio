@@ -32,7 +32,20 @@ export default function Certifications() {
               <FiAward size={18} />
             </div>
             <div>
-              <h3 className="text-sm font-semibold text-slate-100">{cert.name}</h3>
+              <h3 className="text-sm font-semibold text-slate-100">
+                {cert.url ? (
+                  <a
+                    href={cert.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="transition-colors hover:text-cyan-300"
+                  >
+                    {cert.name}
+                  </a>
+                ) : (
+                  cert.name
+                )}
+              </h3>
               <p className="mt-1 text-xs text-slate-400">
                 {cert.issuer} · {cert.year}
               </p>

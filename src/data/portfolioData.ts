@@ -1,6 +1,6 @@
 export const profile = {
   name: "Dhiksha Nandhini S",
-  role: "Software Engineer – Data Engineering | Real-Time Streaming | Data Warehousing",
+  role: "Software Engineer – Data Engineering",
   rotatingRoles: [
     "Real-Time Data Pipelines",
     "Event-Driven Streaming",
@@ -8,11 +8,11 @@ export const profile = {
     "Medallion Architectures",
   ],
   tagline:
-    "Data-focused Software Engineer with 3+ years of experience building real-time and batch data pipelines that process up to 10M+ telemetry events per day — from event-driven ingestion to Bronze/Silver/Gold warehouses and star-schema analytics.",
-  location: "Erode, India",
+    "Data-focused Software Engineer with 3+ years of experience building real-time and batch data pipelines that process 10M+ telemetry events per day — from event-driven ingestion to Bronze/Silver/Gold warehouses and star-schema analytics.",
+  location: "Bangalore, India",
   phone: "+91 6383362799",
   email: "dhikshanandhiniselvakumar@gmail.com",
-  resumeUrl: "#",
+  resumeUrl: "Dhiksha_Nandhini_S.pdf",
   avatarInitials: "DN",
   socials: {
     github: "https://github.com/dhikshanandhini03",
@@ -32,7 +32,7 @@ export const about = {
   paragraphs: [
     "I'm a data-focused Software Engineer with 3+ years of combined experience building real-time and batch data pipelines that process up to 10M+ telemetry events per day. I work hands-on with Python, SQL, Apache Kafka, Apache Flink, Databricks/PySpark, Apache Airflow, dbt, Snowflake, PostgreSQL, and FastAPI across Azure and AWS.",
     "I build event-driven ingestion with event-time handling, late-event processing, idempotent writes, and replay-safe recovery, plus Bronze/Silver/Gold layers and star-schema warehouses for analytics and reporting.",
-    "Beyond my core data engineering work, I partner cross-functionally — from building \"Safe Aura\" for Android TV with product and mobile teams, to prototyping an on-device real-time subtitle-translation experience using ML (Optimium).",
+    "Beyond my core data engineering work, I've contributed to \"Safe Aura\" — an Android TV parental-control app and Idea Blitz 2025 winner, now a deployed client project — and prototyped a real-time subtitle-translation proof-of-concept using on-device ML.",
   ],
   highlights: [
     "Real-Time Streaming",
@@ -52,83 +52,52 @@ export type SkillCategory = {
 
 export const skillCategories: SkillCategory[] = [
   {
-    title: "Languages",
+    title: "Programming",
     icon: "code",
-    skills: ["Python", "SQL", "Java"],
+    skills: ["Python", "SQL"],
   },
   {
     title: "Streaming & Messaging",
     icon: "stream",
-    skills: [
-      "Apache Kafka",
-      "Apache Flink",
-      "Azure Event Hubs",
-      "Event-Driven Architecture",
-      "Event-Time Processing",
-      "Late-Event Handling",
-      "At-Least-Once Delivery",
-      "Idempotent Writes",
-      "Replay-Safe Recovery",
-    ],
+    skills: ["Apache Kafka", "Apache Flink", "Azure Event Hubs", "Event-Time Processing"],
   },
   {
     title: "Data Processing & Orchestration",
     icon: "workflow",
-    skills: [
-      "Databricks",
-      "PySpark",
-      "Apache Airflow",
-      "dbt",
-      "ETL/ELT Pipelines",
-      "Batch & Incremental Processing",
-      "Time-Window Aggregation",
-    ],
+    skills: ["Databricks", "PySpark", "Apache Airflow", "dbt", "ETL/ELT", "Batch & Incremental Processing"],
   },
   {
-    title: "Data Architecture & Modeling",
-    icon: "warehouse",
-    skills: [
-      "Medallion Architecture (Bronze/Silver/Gold)",
-      "Star Schema",
-      "Fact & Dimension Models",
-      "Reporting Marts",
-      "Relational Data Modeling",
-      "Schema Validation",
-      "Deduplication",
-      "Data Quality",
-    ],
-  },
-  {
-    title: "Databases & Warehouses",
+    title: "Databases & Warehousing",
     icon: "database",
-    skills: ["PostgreSQL", "Snowflake", "Apache Doris", "Azure Cosmos DB", "MinIO", "AWS S3"],
+    skills: ["PostgreSQL", "MongoDB", "Snowflake", "Apache Doris", "Azure Cosmos DB"],
   },
   {
     title: "Cloud & DevOps",
     icon: "cloud",
+    skills: ["Microsoft Azure", "AWS (S3)", "Docker", "Jenkins", "Git", "GitHub", "CI/CD"],
+  },
+  {
+    title: "Data Architecture & Modelling",
+    icon: "warehouse",
     skills: [
-      "Microsoft Azure (Event Hubs, Cosmos DB, API Management)",
-      "AWS (S3)",
-      "Git/GitHub",
-      "CI/CD",
+      "Medallion Architecture",
+      "Star Schema",
+      "Fact & Dimension Models",
+      "Data Modeling",
+      "Data Quality",
+      "Schema Validation",
+      "Deduplication",
     ],
   },
   {
     title: "Backend & APIs",
     icon: "devops",
-    skills: ["FastAPI", "REST API Design", "JWT Authentication", "Per-Device Authorization"],
+    skills: ["FastAPI", "REST APIs", "JWT Authentication"],
   },
   {
-    title: "Observability",
+    title: "Analytics & Visualization",
     icon: "chart",
-    skills: [
-      "Kafka Consumer Lag Monitoring",
-      "Flink Job Health",
-      "Health Checks",
-      "Metrics",
-      "Structured Logging",
-      "Alerting",
-    ],
+    skills: ["Power BI"],
   },
 ];
 
@@ -152,7 +121,7 @@ export const experiences: Experience[] = [
       "Orchestrated ETL/ELT workflows with Apache Airflow and dbt into Snowflake, improving data load performance by ~40% through benchmarking and pipeline tuning.",
       "Engineered fault-tolerant ingestion with event-time handling, idempotent writes, deduplication, and replay-safe recovery, plus Bronze/Silver/Gold layers and star-schema models for analytics.",
       "Monitored Kafka consumer lag and Flink job health, troubleshooting ingestion delays and adding health checks, metrics, structured logs, and alerts.",
-      "Built secure FastAPI REST services (JWT, Azure API Management) and partnered with product, mobile, and analytics teams to deliver reliable, analytics-ready datasets.",
+      "Built secure FastAPI REST services (Azure API Management) and partnered with product, mobile, and analytics teams to deliver reliable, analytics-ready datasets.",
     ],
     stack: ["Python", "Kafka", "Flink", "Databricks/PySpark", "Airflow", "dbt", "Snowflake", "FastAPI"],
   },
@@ -234,7 +203,7 @@ export const projects: Project[] = [
     metrics: [
       "At-least-once delivery with idempotent writes",
       "Quarantine handling for problematic records",
-      "Health checks, metrics, structured logs & alerts",
+      "85% reduction in manual reconciliation effort",
     ],
     githubUrl: "https://github.com/dhikshanandhini03/Payment-Reconciliation-Data-Platform",
   },
@@ -255,12 +224,12 @@ export const projects: Project[] = [
   {
     title: "Automated Monthly Broadband Usage Statements",
     description:
-      "End-to-end ETL pipeline supporting ~10,000 connected home gateways at up to 4M+ device usage events per day, with event-driven ingestion from Azure Event Hubs into a structured PostgreSQL data model.",
+      "End-to-end ETL pipeline supporting an ecosystem of connected home gateways at 1M+ device usage events per day, with event-driven ingestion from Azure Event Hubs into a structured PostgreSQL data model.",
     category: "Event-driven ETL / batch reporting",
     pipeline: "Azure Event Hubs → Deserialization/Validation → PostgreSQL → Monthly Batch Aggregation",
     tags: ["Azure Event Hubs", "PostgreSQL", "ETL", "Batch Processing"],
     metrics: [
-      "~10,000 gateways, 4M+ events/day",
+      "1M+ device usage events/day",
       "Idempotent ingestion & conflict handling",
       "Calendar-based monthly usage statements",
     ],
@@ -272,13 +241,28 @@ export type Certification = {
   name: string;
   issuer: string;
   year: string;
+  url?: string;
 };
 
 export const certifications: Certification[] = [
-  { name: "AWS Cloud Solutions Architect", issuer: "Coursera", year: "Certification" },
-  { name: "Google Data Analytics Certificate", issuer: "Coursera", year: "Certification" },
   { name: "Vantiva Q3 Triumph Award", issuer: "Vantiva", year: "2026" },
-  { name: "Best Project, Idea Blitz — \"Safe Aura\"", issuer: "Idea Blitz", year: "2025" },
+  {
+    name: "Idea Blitz 2025 — \"Safe Aura\" (deployed client project)",
+    issuer: "Idea Blitz",
+    year: "2025",
+  },
+  {
+    name: "AWS Cloud Solutions Architect",
+    issuer: "Coursera",
+    year: "Certification",
+    url: "https://www.coursera.org/account/accomplishments/professional-cert/7S4R6GBTJKAD",
+  },
+  {
+    name: "Google Data Analytics Certificate",
+    issuer: "Coursera",
+    year: "Certification",
+    url: "https://www.credly.com/badges/2829ff07-45b7-4881-8bfe-5bc4d63b4638/linked_in_profile",
+  },
 ];
 
 export const education = {
